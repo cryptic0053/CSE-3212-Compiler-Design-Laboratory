@@ -1,0 +1,72 @@
+INCLUDE (stadium) -> stadium
+STRING -> "stdio.h"
+MAIN_FUNCTION (kickoff) -> kickoff
+DELIMITER -> {
+PRINT (goal) -> goal
+STRING -> "Game begins!"
+DELIMITER -> ;
+SCANF (shot) -> shot
+STRING -> "%d"
+DELIMITER -> ,
+OPERATOR -> &
+IDENTIFIER -> score
+DELIMITER -> ;
+FOR_LOOP (dribble) -> dribble
+DELIMITER -> (
+IDENTIFIER -> int
+IDENTIFIER -> i
+OPERATOR -> =
+INTEGER -> 0
+DELIMITER -> ;
+IDENTIFIER -> i
+OPERATOR -> <
+INTEGER -> 3
+DELIMITER -> ;
+IDENTIFIER -> i
+OPERATOR -> +
+OPERATOR -> +
+DELIMITER -> )
+DELIMITER -> {
+PRINT (goal) -> goal
+STRING -> "Player dribbling..."
+DELIMITER -> ;
+IDENTIFIER -> if
+DELIMITER -> (
+IDENTIFIER -> i
+OPERATOR -> =
+OPERATOR -> =
+INTEGER -> 2
+DELIMITER -> )
+DELIMITER -> {
+BREAK (red_card) -> red_card
+DELIMITER -> ;
+DELIMITER -> }
+DELIMITER -> }
+IF_CONDITION (var) -> var
+DELIMITER -> (
+IDENTIFIER -> score
+OPERATOR -> >
+INTEGER -> 10
+DELIMITER -> )
+DELIMITER -> {
+PRINT (goal) -> goal
+STRING -> "Winning!"
+DELIMITER -> ;
+DELIMITER -> }
+ELSE_CONDITION (no_penalty) -> no_penalty
+DELIMITER -> {
+PRINT (goal) -> goal
+STRING -> "Try harder!"
+DELIMITER -> ;
+DELIMITER -> }
+RETURN (final_whistle) -> final_whistle
+INTEGER -> 0
+DELIMITER -> ;
+DELIMITER -> }
+
+Keyword count: 12
+Operator count: 8
+Identifier count: 8
+Number count: 5
+Whitespace count: 45
+Symbol count: 26

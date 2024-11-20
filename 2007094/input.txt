@@ -1,0 +1,22 @@
+stadium "stdio.h"
+
+kickoff {
+    goal "Game begins!";
+
+    shot "%d", &score;
+
+    dribble (int i = 0; i < 3; i++) {
+        goal "Player dribbling...";
+        if (i == 2) {
+            red_card;
+        }
+    }
+
+    var (score > 10) {
+        goal "Winning!";
+    } no_penalty {
+        goal "Try harder!";
+    }
+
+    final_whistle 0;
+}
