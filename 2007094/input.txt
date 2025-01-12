@@ -1,22 +1,74 @@
-stadium "stdio.h"
-
 kickoff {
-    goal "Game begins!";
-
-    shot "%d", &score;
-
-    dribble (int i = 0; i < 3; i++) {
-        goal "Player dribbling...";
-        if (i == 2) {
-            red_card;
+    striker goals;
+    keeper average;
+    midfielder player_name;
+    
+    // Basic input/output
+    goal("Welcome to Football Stats Manager!\n");
+    
+    goal("Enter player name: ");
+    shot(player_name);
+    
+    goal("Enter number of goals: ");
+    shot(goals);
+    
+    goal("Enter player average: ");
+    shot(average);
+    
+    // Testing if-else conditions
+    var (goals > 10) {
+        goal("\nWow! Star Player Performance!\n");
+    }
+    no_penalty{
+        goal("\nKeep practicing to improve!\n");
+    }
+    
+    // Testing loops with for
+    goal("\nCalculating bonus points...\n");
+    striker bonus;
+    dribble (striker i = 0; i < 3; i = i + 1) {
+        goal("Enter bonus points: ");
+        shot(bonus);
+        goals = goals + bonus;
+        goal("Updated goals: ");
+        goal(goals);
+        goal("\n");
+    }
+    
+    // Testing while loop
+    run (average < 5.0) {
+        goal("Average is low, adding 0.5\n");
+        average = average + 0.5;
+        goal("New average: ");
+        goal(average);
+        goal("\n");
+    }
+    
+    // Final stats display
+    goal("\nFinal Player Statistics\n");
+    goal("======================\n");
+    goal("Player Name: ");
+    goal(player_name);
+    goal("\nTotal Goals: ");
+    goal(goals);
+    goal("\nFinal Average: ");
+    goal(average);
+    goal("\n");
+    
+    // Testing nested if conditions
+    var (goals > 15) {
+        var (average > 4.0) {
+            goal("Elite Player Status Achieved!\n");
+        } no_penalty{
+            goal("Good scoring, improve average!\n");
+        }
+    } no_penalty{
+        var (average > 4.0) {
+            goal("Good average, need more goals!\n");
+        } no_penalty {
+            goal("Keep working on improvements!\n");
         }
     }
-
-    var (score > 10) {
-        goal "Winning!";
-    } no_penalty {
-        goal "Try harder!";
-    }
-
+    
     final_whistle 0;
 }
