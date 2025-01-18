@@ -842,72 +842,72 @@ YY_RULE_SETUP
 case 19:
 YY_RULE_SETUP
 #line 39 "2007094.l"
-{ return INT; }      /* int type */
+{ return INT; }      
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
 #line 40 "2007094.l"
-{ return FLOAT; }    /* float type */
+{ return FLOAT; }    
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
 #line 41 "2007094.l"
-{ return CHAR; }     /* char type */
+{ return CHAR; }     
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
 #line 42 "2007094.l"
-{ return STRING; }   /* string type */
+{ return STRING; }   
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
 #line 43 "2007094.l"
-{ return STRUCT; }   /* struct */
+{ return STRUCT; }   
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
 #line 44 "2007094.l"
-{ return ENUM; }     /* enum */
+{ return ENUM; }     
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
 #line 45 "2007094.l"
-{ return ASSIGN; }   /* assignment */
+{ return ASSIGN; }   
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
 #line 46 "2007094.l"
-{ return AND; }      /* logical AND */
+{ return AND; }      
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
 #line 47 "2007094.l"
-{ return OR; }       /* logical OR */
+{ return OR; }       
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
 #line 48 "2007094.l"
-{ return NOT; }      /* logical NOT */
+{ return NOT; }      
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
 #line 49 "2007094.l"
-{ return VOID; }     /* void type */
+{ return VOID; }     
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
 #line 50 "2007094.l"
-{ return SWITCH; }   /* switch */
+{ return SWITCH; }   
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
 #line 51 "2007094.l"
-{ return CASE; }     /* case */
+{ return CASE; }     
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
 #line 52 "2007094.l"
-{ return DO; }       /* do-while */
+{ return DO; }       
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
